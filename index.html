@@ -201,16 +201,8 @@
             <img src="adc8.png" alt="adc8">
           </div>
           <div class="donatorbil">
-            <p class="bil-namn">Namn: aeroxr</p>
-            <img src="aeroxr.png" alt="aeroxr">
-          </div>
-          <div class="donatorbil">
             <p class="bil-namn">Namn: bbghost2</p>
             <img src="bbghost2.png" alt="bbghost2">
-          </div>
-          <div class="donatorbil">
-            <p class="bil-namn">Namn: blazeraq</p>
-            <img src="blazeraq.png" alt="blazeraq">
           </div>
           <div class="donatorbil">
             <p class="bil-namn">Namn: bmci</p>
@@ -229,16 +221,8 @@
             <img src="CarsonsChief.png" alt="CarsonsChief">
           </div>
           <div class="donatorbil">
-            <p class="bil-namn">Namn: chimera</p>
-            <img src="chimera.png" alt="chimera">
-          </div>
-          <div class="donatorbil">
             <p class="bil-namn">Namn: cls63mafia</p>
             <img src="cls63mafia.png" alt="cls63mafia">
-          </div>
-          <div class="donatorbil">
-            <p class="bil-namn">Namn: dl250</p>
-            <img src="dl250.png" alt="dl250">
           </div>
           <div class="donatorbil">
             <p class="bil-namn">Namn: evo10</p>
@@ -261,10 +245,6 @@
             <img src="GODzLBHUR.png" alt="GODzLBHUR">
           </div>
           <div class="donatorbil">
-            <p class="bil-namn">Namn: GODzRZRPRORDSTR</p>
-            <img src="GODzRZRPRORDSTR.png" alt="GODzRZRPRORDSTR">
-          </div>
-          <div class="donatorbil">
             <p class="bil-namn">Namn: gt1</p>
             <img src="gt1.png" alt="gt1">
           </div>
@@ -277,16 +257,8 @@
             <img src="Hycaders6.png" alt="Hycaders6">
           </div>
           <div class="donatorbil">
-            <p class="bil-namn">Namn: kcc_kingz_horse</p>
-            <img src="kcc_kingz_horse.png" alt="kcc_kingz_horse">
-          </div>
-          <div class="donatorbil">
             <p class="bil-namn">Namn: m3bxane</p>
             <img src="m3bxane.png" alt="m3bxane">
-          </div>
-          <div class="donatorbil">
-            <p class="bil-namn">Namn: m3e46</p>
-            <img src="m3e46.png" alt="m3e46">
           </div>
           <div class="donatorbil">
             <p class="bil-namn">Namn: m3g80c</p>
@@ -295,14 +267,6 @@
           <div class="donatorbil">
             <p class="bil-namn">Namn: m5e60</p>
             <img src="m5e60.png" alt="m5e60">
-          </div>
-          <div class="donatorbil">
-            <p class="bil-namn">Namn: miniconvertible</p>
-            <img src="miniconvertible.png" alt="miniconvertible">
-          </div>
-          <div class="donatorbil">
-            <p class="bil-namn">Namn: mrbeanmini</p>
-            <img src="mrbeanmini.png" alt="mrbeanmini">
           </div>
           <div class="donatorbil">
             <p class="bil-namn">Namn: offlrds1000r</p>
@@ -323,10 +287,6 @@
           <div class="donatorbil">
             <p class="bil-namn">Namn: sf90xx</p>
             <img src="sf90xx.png" alt="sf90xx">
-          </div>
-          <div class="donatorbil">
-            <p class="bil-namn">Namn: simson</p>
-            <img src="simson.png" alt="simson">
           </div>
           <div class="donatorbil">
             <p class="bil-namn">Namn: SnBladec</p>
@@ -360,7 +320,18 @@
             <p class="bil-namn">Namn: rocket</p>
             <img src="rocket.png" alt="rocket">
           </div>
-          <!-- Lägg till fler bilar här -->
+          <div class="donatorbil">
+            <p class="bil-namn">Namn: titanhawk</p>
+            <img src="titanhawk.png" alt="titanhawk">
+          </div>
+          <div class="donatorbil">
+            <p class="bil-namn">Namn: urusperf23</p>
+            <img src="urusperf23.png" alt="urusperf23">
+          </div>
+          <div class="donatorbil">
+            <p class="bil-namn">Namn: rs3s20</p>
+            <img src="rs3s20.png" alt="rs3s20">
+          </div>
         </div>
       </section>
       
@@ -378,8 +349,7 @@
                 link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const target = this.getAttribute('data-target');
-    
-                    // Visa rätt sektion beroende på klick
+                    
                     if (target === 'regler') {
                         mainContent.classList.add('hidden');
                         reglerSection.style.display = 'block';
@@ -390,7 +360,6 @@
                         donatorbilar.style.display = 'block';
                         window.scrollTo(0, 0);
                     } else {
-                        // Default = visa main content
                         mainContent.classList.remove('hidden');
                         reglerSection.style.display = 'none';
                         donatorbilar.style.display = 'none';
@@ -424,7 +393,6 @@
             window.addEventListener('load', () => {
                 document.querySelector('nav').classList.add('visible');
     
-                // Kolla URL-hash
                 const hash = window.location.hash;
                 if (hash === "#donatorbilar") {
                     document.querySelector("nav").style.display = "none";
@@ -433,11 +401,10 @@
                     donatorbilar.style.display = "block";
                     window.scrollTo(0, 0);
                 } else {
-                    donatorbilar.style.display = "none"; // Göm donatorbilar annars
+                    donatorbilar.style.display = "none";
                 }
             });
     
-            // FAQ toggle
             document.querySelectorAll('.question').forEach((question) => {
                 question.addEventListener('click', function () {
                     const answer = this.nextElementSibling;
